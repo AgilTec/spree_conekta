@@ -15,7 +15,7 @@ jQuery ->
     listenSubmit: ->
       @form.on 'submit', (e)=>
         e.preventDefault()
-        currentForm = @form()
+        currentForm = @form
         if @isConektaForm(currentForm)
           @processPayment(currentForm)
         else
